@@ -1,6 +1,15 @@
 from math import ceil
 
 def calc_account(m):
+    min = 610
+    if m <= 0: 
+        return None
+    elif m <= 1700:
+        return min
+    else:
+        ex = ( 1 + (m - 1701) // 315) * 80
+        return min + ex
+            
     # 実装は入れていません、自分で入れてください
     pass
 
